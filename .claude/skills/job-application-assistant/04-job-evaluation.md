@@ -1,7 +1,5 @@
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
-
 ## Scoring Dimensions
 
 Evaluate each job posting against these five dimensions:
@@ -16,9 +14,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, TypeScript, Flutter/Dart, C#/.NET, Microsoft Azure (AZ-900), Linux systems administration, Ansible, Terraform, Docker, Kubernetes, CI/CD (GitHub Actions), Next.js/React, REST APIs, Firebase, Supabase, OpenCV, Agile/Scrum
+**Moderate match areas:** Django, NumPy/Pandas, SQL/PostgreSQL, Mixed-Integer Programming, Swift (minimal)
+**Weak match areas:** Pure ML/deep learning research, data engineering at petabyte scale, enterprise Java systems, Rust, native iOS deep specialisation
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +28,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Cloud/DevOps automation (banking infrastructure at Intertech), mobile application development (Flutter, OpenCV), full-stack web engineering (EV tracker, Next.js/Supabase)
+**Moderate:** Data analysis and pipelines, computer vision applications, open-source contribution to safety-critical software (IVAO/Aurora)
+**Entry-level:** Enterprise-scale architecture decisions, team leadership, production ML systems at scale
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -44,13 +42,19 @@ Does the role and company culture match the behavioral profile?
 | 40-59 | Some friction areas |
 | 0-39 | Significant culture mismatch |
 
+**Strong fit signals:** Cross-functional ownership, autonomous work, shipping-focused culture, full-stack or broad scope, clear deliverables
+**Friction signals:** Pure specialist silos, heavy bureaucratic process, pure frontend with no systems component
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+- **UK roles:** PASS — holds UK Graduate Visa, eligible to work without sponsorship for 2 years from graduation (Sep 2026). For cover letters: "I hold a UK Graduate Visa and am available to start without sponsorship."
+- **Netherlands roles:** PASS — holds Orientation Year Visa, eligible to work without sponsorship for 1 year. For cover letters: "I hold a Netherlands Orientation Year Visa and am available immediately without sponsorship."
+- **Germany roles:** PASS — open to relocation; standard EU/Schengen work permit process applies as Turkish citizen. Verify requirements per employer.
+- **Turkey roles:** PASS — citizen, no visa needed.
+- **Denmark (English-language) roles:** PASS — open to relocation.
+- **Remote with occasional office:** PASS
+- **Frequent international travel:** FLAG (discuss if relevant to role)
+- **Visa note:** Do NOT state visa status on CV. Include naturally in cover letters for UK and NL applications only (per templates above).
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -63,19 +67,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Secure a graduate-level software engineering, cloud/DevOps, or mobile development role
+- Build depth in whichever area the first role requires, while leveraging breadth across the stack
+- Grow into technical ownership of a feature or system end-to-end
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: building new features/systems end-to-end, automation that removes repetitive work, shipping working software to real users, problem-solving across the stack
+- Tasks that drain: unclear or constantly shifting requirements, pure maintenance with no new development, pure frontend with no backend/systems component
+- Non-task factors: clear goals, autonomy on implementation, environment that rewards initiative
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security:** Graduating September 2026; seeking first full-time role, open to start immediately after graduation
+- **Flexibility:** Open to relocation anywhere (UK, NL, DE, TR, DK); no constraints on hybrid/remote split; no salary floor stated
+- **Professional development:** Strong interest in deepening expertise in whichever technical area the first role provides
 
 ### 6. Salary Benchmark (Optional)
 

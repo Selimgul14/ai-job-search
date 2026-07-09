@@ -1,60 +1,90 @@
 # Candidate Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all sections will be filled with your actual information -->
-
 ## Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_ADDRESS]
-- **Phone:** [YOUR_PHONE]
-- **Email:** [YOUR_EMAIL]
-- **LinkedIn:** [YOUR_LINKEDIN_URL]
-- **GitHub:** [YOUR_GITHUB_URL]
-- **Languages:** [YOUR_LANGUAGES with proficiency levels]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **Constraints:** [YOUR_COMMUTE_OR_LOCATION_CONSTRAINTS]
+- **Name:** Selim Gul
+- **Location:** Liverpool, UK | Open to Relocation (UK, Netherlands, Germany, Turkey, Denmark)
+- **Phone:** +44-7760637907
+- **Email:** gul.selim@outlook.com
+- **LinkedIn:** https://linkedin.com/in/selim-gul
+- **GitHub:** https://github.com/Selimgul14
+- **Languages:** Turkish (native), English (fluent — TOEFL iBT 112/120)
+- **Status:** MSc student, graduating September 2026
+- **Visa:** UK Graduate Visa (eligible to work without sponsorship, 2 years from graduation); Netherlands Orientation Year Visa (1 year). Do NOT state on CV — include naturally in cover letters for UK and NL applications only.
 
 ## Education
 
-| Degree | Period | Institution | Key Topics |
-|--------|--------|-------------|------------|
-| [DEGREE] | [YEARS] | [INSTITUTION] | [TOPICS] |
+| Degree | Period | Institution | Key Details |
+|--------|--------|-------------|-------------|
+| M.Sc. Advanced Computer Science | Sep 2025 – Sep 2026 | University of Liverpool, Liverpool, UK | Cloud Computing, Machine Learning, Advanced Algorithmic Solutions, Big Data Analytics |
+| B.S. Computer Science & Engineering | Sep 2020 – Sep 2024 | Sabanci University, Istanbul, Turkey | 50% Merit Scholarship (top 1% nationally); coursework: OS, Networks, DB Systems, Software Engineering |
+| Exchange — Computer Science | Sep–Dec 2022 | Hanyang University, Seoul, South Korea | — |
+| Exchange — Computer Science | Jan–May 2024 | SUNY Oswego, New York, USA | — |
 
 ## Professional Experience
 
-### [JOB_TITLE] - [COMPANY] ([START] - [END])
-[LOCATION]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_1]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_2]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_3]
+### Volunteer Software Developer — IVAO (Sep 2023 – Present)
+Remote
+- Contributing to Aurora, an open-source cross-platform (Unix/Windows) air traffic control client in C# and Blazor
+- Focusing on real-time data processing and UI performance optimisation for safety-critical simulation software
 
-<!-- Add more roles as needed -->
+### Systems Engineer (Part-Time) — Intertech (Dec 2023 – Jun 2024)
+Istanbul, Turkey
+- Engineered automated inventory management pipeline using Python and PowerShell to synchronise VM data across Hyper-V and VMware
+- Architected LLM-based automation tools to dynamically generate Ansible playbooks, reducing manual scripting by 40%
+- Managed and optimised Linux and Windows server environments for high-availability banking infrastructure
+
+### Software Engineer Intern — Intertech (Jul 2023 – Sep 2023)
+Istanbul, Turkey
+- Developed a mobile security tool using OpenCV and a CNN classifier to verify document authenticity, achieving 94% precision
+- Integrated high-performance image processing into a Flutter UI for low-latency real-time performance on mid-range devices
+
+### Learning Assistant — Mobile Computing, Sabanci University (Feb 2022 – Jun 2022)
+Istanbul, Turkey
+- Mentored 40+ students in Flutter development (state management, widget lifecycle, async Dart, backend integration)
+- Conducted weekly code reviews and debugging sessions; average project scores improved by 10%
 
 ## Independent Projects
-<!-- Projects outside of employment: freelance, open source, personal -->
-- **[PROJECT_NAME]**: [DESCRIPTION]
+
+- **EV Trip Tracker** (Next.js 15, TypeScript, Supabase, Tailwind, Leaflet, Vercel — 2025/2026): Full-stack web app for logging EV charging sessions across a ~5,000 km multi-country road trip. Multi-currency cost tracking (5 currencies, stored in original denomination — never converted at write time), Leaflet map with clickable charge stop markers, physics-accurate efficiency model (battery SoC-based consumption, not kWh-added — avoids inflating efficiency on free top-ups), petrol savings and CO₂ calculator, CSV/Excel export. Deployed on Vercel with Supabase (PostgreSQL) backend. Built with Claude Code.
+
+- **Election Analysis & Nowcasting Engine** (Python, MIP — 2023-24): Sabancı University senior capstone project (ENS491). Mixed-Integer Programming model to predict election outcomes from scraped precinct-level data. Automated scraping and data cleaning pipelines for large-scale political datasets.
+
+- **CT-Angiography Vessel Segmentation Pipeline** (Python, OpenCV, Azure — 2024): Medical imaging pipeline using CLAHE and adaptive thresholding for CT-angiography analysis. Integrated GPT-4 API interface for natural language queries on radiological data.
+
+- **Fake ID Detection System** (Flutter, OpenCV, Python — 2023): Mobile app verifying document authenticity via on-device CNN classifier. Optimised for low-latency scanning on mid-range devices. 94% precision. Open-sourced on GitHub (4 stars).
+
+- **E-Commerce Ecosystem (CS308)** (Flutter, Firebase, Agile — 2022): Lead developer in a 5-person team. Real-time inventory, secure payments, Firebase integration. Managed Agile sprints and Git workflow; delivered production-quality MVP on time.
+
+- **k-Clique Optimizer** (C++ — 2023): High-performance heuristic for maximum clique finding in large-scale graphs, O(n² × k) complexity.
+
+- **ScrabbleHelper** (Swift — 2022): iOS utility app that suggests valid, high-scoring words during Scrabble play. *[Added from GitHub repository review — minor personal utility, limited production depth compared to Flutter/mobile work]*
 
 ## Technical Skills
 
-### Programming & ML
-- **[LANGUAGE]** ([PROFICIENCY]): [FRAMEWORKS_AND_LIBRARIES]
-- [OTHER_SKILLS]
+### Languages
+- Python, TypeScript, C#, C++, Dart, SQL, Java, Bash, PowerShell, Swift (minimal)
 
-### Domain Expertise
-- [DOMAIN_1]
-- [DOMAIN_2]
+### Mobile & Web
+- Flutter, Dart, Android SDK, iOS deployment, State Management (Provider/Bloc)
+- Next.js 15 (App Router), React, Django, REST APIs, Firebase, Supabase, SQLite, PostgreSQL
 
-### Software & Tools
-- [TOOL_LIST]
+### Cloud & DevOps
+- Microsoft Azure (AZ-900 certified), Kubernetes, Docker, Terraform (IaC), Ansible
+- CI/CD (GitHub Actions), Linux system administration, VMware, Hyper-V, Vercel
 
-## Publications
-<!-- List peer-reviewed publications, if any -->
-1. [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL]. [DOI_LINK]
+### ML & Data
+- OpenCV, NumPy, Pandas, CrewAI, Jupyter Notebook, Mixed-Integer Programming
+
+### Tools & Practices
+- Git, Jira, Confluence, Agile/Scrum, TypeScript strict mode, OOP, Data Structures & Algorithms
+
+## Certifications
+- Microsoft Certified: Azure Fundamentals (AZ-900)
+- TOEFL iBT: 112/120 (Advanced English Proficiency)
+- IBM Data Science (Coursera): Tools for Data Science; Python for Data Science and AI; Foundations: Data, Data, Everywhere; Ask Questions to Make Data-Driven Decisions
 
 ## Awards
-- [AWARD] - [EVENT] ([YEAR])
+- **50% Merit Scholarship** — Sabanci University (2020), awarded based on top 1% national university entrance ranking
 
 ## References
-- [NAME], [TITLE], [COMPANY] ([EMAIL], [PHONE])
-
-More references available upon request.
+Available upon request.

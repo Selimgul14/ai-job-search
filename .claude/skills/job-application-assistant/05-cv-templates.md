@@ -61,7 +61,6 @@ Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page
 % 4. Professional Experience section
 % 5. Selected Publications (if applicable)
 % 6. Honors and Awards (if applicable)
-% 7. References
 
 \end{document}
 ```
@@ -105,12 +104,14 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Cloud / DevOps / Platform Engineering roles:**
+> Software engineer and MSc Computer Science candidate (University of Liverpool, graduating Sep 2026) with hands-on cloud and infrastructure automation experience from a banking systems integrator. Architected LLM-powered tooling to generate Ansible playbooks dynamically, cutting manual scripting time by 40%; managed high-availability Linux and Windows server environments across VMware and Hyper-V. Holds Azure Fundamentals (AZ-900) certification with working knowledge of Kubernetes, Docker, Terraform, and GitHub Actions CI/CD pipelines. Brings a builder's mindset — shipping reliable, automated systems end-to-end rather than maintaining scripts in isolation.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Mobile Development (Flutter) roles:**
+> Software engineer and MSc Computer Science candidate (University of Liverpool, graduating Sep 2026) with three years of Flutter/Dart experience across internship, academic, and teaching contexts. Built a production mobile security tool integrating OpenCV and a CNN classifier for real-time document authenticity detection (94% precision); led a 5-person Agile team delivering a full-stack Flutter/Firebase e-commerce application; and mentored 40+ undergraduates in Flutter state management and widget architecture. Comfortable owning the full mobile stack from backend integration (Firebase, REST APIs, Supabase) through to on-device performance optimisation.
+
+**For General Software Engineering / Backend roles:**
+> Software engineer and MSc Computer Science candidate (University of Liverpool, graduating Sep 2026) with a track record of shipping production software across cloud infrastructure, mobile, and full-stack web. Recent work includes a deployed Next.js 15/TypeScript/Supabase application (built with Claude Code) featuring a physics-accurate EV efficiency model and multi-currency tracking, and LLM-based DevOps tooling at a banking systems integrator that reduced manual scripting by 40%. Fluent in Python, TypeScript, C\#, and Dart; experienced with REST APIs, PostgreSQL, Docker, and CI/CD pipelines. Strongest in backend and systems engineering; comfortable spanning the stack wherever the role demands.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.
@@ -140,11 +141,6 @@ If there is a gap in your employment history:
 
 ### Honors and Awards
 - Keep format brief, one line each
-
-### References
-- List 2-4 references with name, title, company, and contact
-- End with: "More references are available upon request."
-- **Do not attach reference letters** - employers typically contact references directly
 
 ## Compile-and-Inspect Loop (MANDATORY)
 
@@ -188,7 +184,6 @@ The CV **must** fit on exactly 2 pages when compiled. Use these content limits a
 | Education | 2-3 entries |
 | Publications | 2-3 entries |
 | Awards | 3 entries, single line each |
-| References | "Available upon request." (single line) |
 
 **If in doubt, cut rather than squeeze.** Reducing `\vspace` or geometry scale to force-fit content makes the CV look cramped.
 
@@ -230,7 +225,6 @@ The section order varies by role type:
 4. Education (reverse chronological)
 5. Languages
 6. Publications & Awards
-7. References
 
 **For domain-specific / specialist roles:**
 1. Profile statement / elevator pitch
@@ -238,4 +232,3 @@ The section order varies by role type:
 3. Education (reverse chronological) - credentials are a key qualifier
 4. Professional Experience (reverse chronological)
 5. Publications & Awards
-6. References

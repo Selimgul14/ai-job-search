@@ -1,41 +1,40 @@
-%% Example CV - [YOUR_NAME]
+%% Master Reference CV — Selim Gul
 %% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
+%% Use as a source when tailoring role-specific CVs (cv/main_<company>.tex).
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
-%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+%% Target output: exactly 2 pages at scale=0.77
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 
-% Force both first and last name AND section headings to render in moderncv
-% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
-% looks inconsistent with the rest of the blue accent scheme.
+% Force name and section headings to render in moderncv blue (color1).
+% Default banking on lualatex+MiKTeX leaves these black — the override is required.
 \renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
 \renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
+\usepackage{needspace}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Selim Gul - CV},
     pdfpagemode=FullScreen,
 }
-\usepackage[scale=0.80]{geometry}
+\usepackage[scale=0.77]{geometry}
 \usepackage{import}
 
-% personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+% Personal data
+\name{Selim}{Gul}
+\address{Liverpool, United Kingdom}{}{}
+\phone[mobile]{+44 7760637907}
+\email{gul.selim@outlook.com}
+\extrainfo{\href{https://linkedin.com/in/selim-gul}{LinkedIn}, \href{https://github.com/Selimgul14}{GitHub}}
 
 \begin{document}
 
@@ -46,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Software engineer and MSc Computer Science candidate (University of Liverpool, graduating Sep 2026) with proven experience across cloud/DevOps automation, full-stack web, and Flutter mobile development. Architected LLM-powered infrastructure tooling at a banking systems integrator (40\% reduction in manual scripting), built a cross-platform mobile security app achieving 94\% document verification precision, and deployed a Next.js/TypeScript/Supabase application used on a real $\sim$5{,}000~km multi-country road trip. Holds Azure Fundamentals (AZ-900) certification; hands-on with Kubernetes, Docker, Terraform, Ansible, and GitHub Actions. Adaptable generalist who focuses depth where the role demands it.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +55,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Languages}: Python, TypeScript, C\#, C++, Dart, SQL, Java, Bash, PowerShell
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud \& DevOps}: Microsoft Azure (AZ-900 certified), Kubernetes, Docker, Terraform (IaC), Ansible, CI/CD (GitHub Actions), Linux system administration, VMware, Hyper-V, Vercel
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Mobile \& Web}: Flutter, Dart (Provider/Bloc), Android SDK, iOS deployment, Next.js~15 (App Router), React, Django, REST APIs, Firebase, Supabase, PostgreSQL, SQLite
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{ML \& Data}: OpenCV, NumPy, Pandas, CrewAI, Jupyter Notebook, Mixed-Integer Programming
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Tools \& Practices}: Git, GitHub Actions, Jira, Confluence, Agile/Scrum, TypeScript strict mode, OOP, Data Structures \& Algorithms
 
 \end{itemize}
 
@@ -76,33 +75,58 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Sep 2023 -- Present}{Volunteer Software Developer}{IVAO}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Contributing to Aurora, an open-source cross-platform (Unix/Windows) air traffic control client in C\# and Blazor
+    \item Focusing on real-time data processing and UI performance optimisation for safety-critical simulation software
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Dec 2023 -- Jun 2024}{Systems Engineer (Part-Time)}{Intertech}{Istanbul, Turkey}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Architected LLM-based automation tools to dynamically generate Ansible playbooks, reducing manual scripting time by 40\%
+    \item Engineered automated inventory management pipeline using Python and PowerShell to synchronise VM data across Hyper-V and VMware
+    \item Managed and optimised Linux and Windows server environments for high-availability banking infrastructure
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Jul 2023 -- Sep 2023}{Software Engineer Intern}{Intertech}{Istanbul, Turkey}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Developed a mobile security tool using OpenCV and a CNN classifier to verify document authenticity, achieving 94\% precision
+    \item Integrated high-performance image processing into a Flutter UI for low-latency real-time performance on mid-range devices
 \end{itemize}}}
+
+\vspace{3pt}
+
+\needspace{5\baselineskip}
+\item{\cventry{Feb 2022 -- Jun 2022}{Learning Assistant, Mobile Computing}{Sabanci University}{Istanbul, Turkey}{}{\vspace{1pt}
+\begin{itemize}
+    \item Mentored 40+ students in Flutter development (state management, widget lifecycle, async Dart, backend integration)
+    \item Conducted weekly code reviews and debugging sessions; average project scores improved by 10\%
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     INDEPENDENT PROJECTS
+% ============================================================
+
+\section{Independent Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{EV Trip Tracker} (Next.js~15, TypeScript, Supabase, Tailwind, Leaflet, Vercel --- 2025/2026): Full-stack web app for logging EV charging sessions across a $\sim$5{,}000~km multi-country road trip. Physics-accurate efficiency model (battery SoC drop $\times$ usable capacity, avoiding inflation from free top-ups); multi-currency cost tracking stored in original denomination; Leaflet map with clickable charge markers; petrol savings and CO$_{2}$ calculator; CSV/Excel export. Deployed on Vercel with Supabase (PostgreSQL) backend. Built with Claude Code.
+
+\item \textbf{Election Analysis \& Nowcasting Engine} (Python, MIP --- 2023--24): Mixed-Integer Programming model to predict election outcomes from scraped precinct-level data; automated data cleaning pipelines for large-scale political datasets.
+
+\item \textbf{CT-Angiography Vessel Segmentation} (Python, OpenCV, Azure --- 2024): Medical imaging pipeline using CLAHE and adaptive thresholding; GPT-4 API interface for natural language queries on radiological data.
+
+\item \textbf{E-Commerce Ecosystem} (Flutter, Firebase, Agile --- 2022): Lead developer in a 5-person team; real-time inventory, secure payments, Firebase integration; Agile sprint management and Git workflow; production-quality MVP delivered on time.
 
 \end{itemize}
 
@@ -114,56 +138,50 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\needspace{5\baselineskip}
+\item{\cventry{Sep 2025 -- Sep 2026}{M.Sc.\ Advanced Computer Science}{University of Liverpool}{Liverpool, UK}{}{\vspace{1pt}
+Modules: Cloud Computing, Machine Learning, Advanced Algorithmic Solutions, Big Data Analytics.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\needspace{5\baselineskip}
+\item{\cventry{Sep 2020 -- Sep 2024}{B.S.\ Computer Science \& Engineering}{Sabanci University}{Istanbul, Turkey}{}{\vspace{1pt}
+50\% Merit Scholarship (top 1\% national university entrance ranking). Coursework: OS, Networks, Database Systems, Software Engineering.
 }}
 
+\vspace{3pt}
+
+\needspace{3\baselineskip}
+\item{\cventry{Jan -- May 2024}{Exchange Student, Computer Science}{SUNY Oswego}{New York, USA}{}{}}
+
+\vspace{3pt}
+
+\needspace{3\baselineskip}
+\item{\cventry{Sep -- Dec 2022}{Exchange Student, Computer Science}{Hanyang University}{Seoul, South Korea}{}{}}
+
 \end{itemize}
 
 % ============================================================
-%     LANGUAGES
+%     LANGUAGES & CERTIFICATIONS
 % ============================================================
 
-\section{Languages}
+\section{Languages \& Certifications}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
+\item Turkish (native), English (fluent --- TOEFL iBT 112/120)
+\item Microsoft Certified: Azure Fundamentals (AZ-900)
+\item IBM Data Science Professional: Tools for Data Science; Python for Data Science and AI; Foundations: Data, Data, Everywhere; Ask Questions to Make Data-Driven Decisions
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
-\end{itemize}
-
-% ============================================================
-%     REFERENCES
-% ============================================================
-
-\section{References}
-\vspace{1pt}
-\begin{itemize}
-\item{Available upon request.}
+\item{\textbf{50\% Merit Scholarship} -- Sabanci University (2020), awarded based on top 1\% national university entrance ranking.}
 \end{itemize}
 
 \end{document}

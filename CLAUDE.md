@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Selim Gul
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Selim Gul, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,68 +10,84 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Selim Gul
+- **Location:** Liverpool, UK | Open to relocation: UK (countrywide), Netherlands, Germany, Turkey, Denmark (English-language)
+- **Phone:** +44 7760637907
+- **Email:** gul.selim@outlook.com
+- **LinkedIn:** https://linkedin.com/in/selim-gul
+- **GitHub:** https://github.com/Selimgul14
+- **Languages:** Turkish (native), English (fluent — TOEFL iBT 112/120)
+- **Status:** MSc student, graduating September 2026
+- **Visa:** UK Graduate Visa (eligible to work without sponsorship, 2 years from Sep 2026 graduation); Netherlands Orientation Year Visa (1 year). **Do NOT state on CV** — include naturally in cover letters for UK and NL applications only.
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **M.Sc. Advanced Computer Science** (Sep 2025 – Sep 2026) — University of Liverpool, Liverpool, UK
+  - Modules: Cloud Computing, Machine Learning, Advanced Algorithmic Solutions, Big Data Analytics
+- **B.S. Computer Science & Engineering** (Sep 2020 – Sep 2024) — Sabanci University, Istanbul, Turkey
+  - 50% Merit Scholarship (top 1% national entrance ranking)
+  - Coursework: OS, Networks, Database Systems, Software Engineering
+- **Exchange** (Jan–May 2024) — SUNY Oswego, New York, USA
+- **Exchange** (Sep–Dec 2022) — Hanyang University, Seoul, South Korea
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Volunteer Software Developer** (Sep 2023 – Present) — **IVAO**, Remote
+  - Contributing to Aurora, open-source cross-platform ATC client in C# and Blazor
+  - Real-time data processing and UI performance optimisation for safety-critical software
+- **Systems Engineer (Part-Time)** (Dec 2023 – Jun 2024) — **Intertech**, Istanbul, Turkey
+  - Architected LLM-based automation tools to generate Ansible playbooks — 40% reduction in manual scripting time
+  - Engineered Python/PowerShell pipeline to synchronise VM inventory across Hyper-V and VMware
+  - Managed Linux/Windows server environments for high-availability banking infrastructure
+- **Software Engineer Intern** (Jul 2023 – Sep 2023) — **Intertech**, Istanbul, Turkey
+  - Built mobile security tool using OpenCV and CNN classifier; 94% document verification precision
+  - Integrated image processing into Flutter UI for low-latency real-time performance on mid-range devices
+- **Learning Assistant, Mobile Computing** (Feb 2022 – Jun 2022) — **Sabanci University**, Istanbul, Turkey
+  - Mentored 40+ students in Flutter/Dart (state management, widget lifecycle, async programming)
+  - Weekly code reviews and debugging; average project scores improved by 10%
+
+### Independent Projects
+- **EV Trip Tracker** (Next.js 15, TypeScript, Supabase, Tailwind, Leaflet, Vercel — 2025/2026): Full-stack web app for logging EV charging across a ~5,000 km multi-country road trip. Physics-accurate efficiency model (battery SoC drop × usable capacity — avoids inflating numbers from free top-ups). Multi-currency cost tracking (stored in original denomination, never converted at write time). Map, CSV/Excel export. Deployed on Vercel. Built with Claude Code.
+- **Election Analysis & Nowcasting Engine** (Python, MIP — 2023–24): Sabancı University senior capstone project (ENS491). Mixed-Integer Programming model predicting election outcomes from scraped precinct-level data.
+- **CT-Angiography Vessel Segmentation** (Python, OpenCV, Azure — 2024): Medical imaging pipeline with CLAHE + adaptive thresholding; GPT-4 API interface for natural language radiology queries.
+- **E-Commerce Ecosystem CS308** (Flutter, Firebase, Agile — 2022): Lead developer, 5-person team. Real-time inventory, secure payments, Firebase. Managed Agile sprints and Git workflow.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, TypeScript, Flutter/Dart, C#/.NET, Microsoft Azure (AZ-900), Linux, Ansible
+- **Secondary:** C++, SQL, Java, Docker, Kubernetes, Terraform, Next.js/React, Firebase, Supabase, OpenCV
+- **Tools:** Git, GitHub Actions, VMware, Hyper-V, Vercel, Jira, Confluence, Agile/Scrum
+- **ML & Data:** OpenCV, NumPy, Pandas, CrewAI, Jupyter, Mixed-Integer Programming
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
-
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- Microsoft Certified: Azure Fundamentals (AZ-900)
+- TOEFL iBT: 112/120 (Advanced English Proficiency)
+- IBM Data Science: Tools for Data Science; Python for Data Science and AI; Foundations: Data, Data, Everywhere; Ask Questions to Make Data-Driven Decisions
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- **50% Merit Scholarship** — Sabanci University (2020), top 1% national university entrance ranking
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Adaptable generalist** — actively shapes profile to fit the role; maintains distinct CV variants as evidence
+- **End-to-end builder** — motivated by shipping complete, production-quality software from idea to deployment
+- **High initiative** — LLM Ansible automation at Intertech was self-initiated; EV tracker and election engine built without prompting
+- **Strengths:** Cross-stack problem-solving, autonomous work, shipping-focused environments, clear deliverables
+- **Growth areas:** Deepening specialism (currently a breadth-first profile); prefers clear requirements over ambiguous scope
+- **Thrives in:** Environments that reward shipping over process; roles with ownership of a feature or system end-to-end
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building new features/systems end-to-end
+- Automation that removes repetitive manual work
+- Shipping working software to real users
+- Problem-solving that spans the stack (infrastructure through frontend)
 
-### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+### Target Roles
+- **Cloud/DevOps:** Cloud Engineer, DevOps Engineer, Platform Engineer, Site Reliability Engineer
+- **Software Engineering:** Software Engineer, Backend Engineer, Full-Stack Engineer, Systems Engineer
+- **Mobile:** Flutter Developer, Mobile Developer, Mobile Engineer
+- **Adjacent:** Automation Engineer, Solutions Engineer, Technical Consultant
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Pure frontend roles with no systems/backend component
+- Roles requiring visa sponsorship (Selim does NOT need sponsorship — Graduate Visa UK, Orientation Year NL)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

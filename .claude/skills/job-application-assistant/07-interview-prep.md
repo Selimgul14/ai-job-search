@@ -1,7 +1,5 @@
 # Interview Preparation Guide
 
-<!-- SETUP: STAR examples are personalized by running /setup based on your actual experience -->
-
 ## STAR Format
 
 Structure answers as: **Situation** (context), **Task** (your responsibility), **Action** (what you did), **Result** (outcome).
@@ -10,44 +8,64 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. LLM-Powered Ansible Automation at Intertech (Initiative & Technical Impact)
+**S:** The operations team at Intertech maintained banking infrastructure across Hyper-V and VMware. Writing Ansible playbooks was time-consuming and repetitive — engineers were spending hours on manual scripting for each configuration change.
+**T:** As part of my part-time systems engineering role, I identified this as an opportunity to improve team efficiency and took initiative to design a solution.
+**A:** Designed and built an LLM-based tool that dynamically generated Ansible playbooks from structured input. Integrated it into the team's existing infrastructure workflow using Python.
+**R:** Reduced manual scripting time by 40%. The tool was adopted by the operations team and continued in use after my tenure ended.
+**Use for:** "Tell me about a time you improved a process", "Give an example of initiative", "How have you applied AI/ML in a practical context?", "Tell me about a technical achievement you're proud of"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+---
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Fake ID Detection System (Technical Problem-Solving & Delivery)
+**S:** During my internship at Intertech, I was tasked with building a proof-of-concept mobile security tool. The goal was to detect fraudulent ID documents in real-time using a mobile camera.
+**T:** Design and deliver a working prototype within the internship period that met a meaningful precision threshold.
+**A:** Built a Flutter mobile application integrated with OpenCV for image processing and a CNN classifier for authenticity detection. Optimised the on-device inference pipeline to maintain low latency on mid-range devices.
+**R:** Achieved 94% precision on the document verification task. The tool was delivered as a working prototype within the internship timeline.
+**Use for:** "Tell me about a technical project you delivered end-to-end", "Mobile development experience", "Computer vision / ML application", "Delivering under a deadline"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+---
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 3. EV Trip Tracker — Personal Project (Initiative, Full-Stack Engineering)
+**S:** Planning a ~5,000 km Tesla road trip across 7 countries with 5 different currencies and no existing tool that tracked charging efficiency the way I needed.
+**T:** Build a production-quality web app from scratch that I would actually use on the trip.
+**A:** Built a full-stack Next.js 15 / TypeScript / Supabase application with a physics-accurate efficiency model. Key design decision: used battery state-of-charge drop rather than kWh-added to measure efficiency — this avoids inflating numbers when you receive a free top-up. Added multi-currency support (storing original denomination, never converting at write time), a Leaflet map, and CSV/Excel export. Deployed on Vercel.
+**R:** All three phases shipped and deployed. The app was used on the actual trip. Currently maintained on GitHub.
+**Use for:** "Tell me about a personal project", "What do you build outside of work?", "Full-stack engineering", "Design decisions you're proud of", "Tell me about a time you solved a problem for yourself"
+
+---
+
+### 4. E-Commerce Ecosystem — CS308 (Team Leadership & Agile Delivery)
+**S:** A 5-person team project at Sabanci University requiring a full-stack mobile e-commerce application built from scratch in one semester.
+**T:** As lead developer, I was responsible for architecture decisions, sprint management, and ensuring the team delivered a production-quality MVP on time.
+**A:** Designed the application architecture (Flutter + Firebase), set up Git branching conventions, ran weekly Agile sprints using Jira, conducted code reviews, and coordinated between the frontend and backend contributors.
+**R:** Delivered a working application with real-time inventory, secure payment flows, and user authentication. The project received a high grade and all features were submitted on time.
+**Use for:** "Teamwork and leadership", "Agile/Scrum experience", "Managing a project", "Coordinating with others under a deadline"
+
+---
+
+### 5. Learning Assistant — Mobile Computing (Communication & Teaching)
+**S:** 40+ undergraduate students in the CS310 Mobile Computing course at Sabanci University were learning Flutter development — many struggling with state management and asynchronous programming in Dart.
+**T:** As learning assistant, help students understand complex Flutter concepts and improve their project quality within a single semester.
+**A:** Ran weekly lab sessions focused on widget lifecycle, state management (Provider/Bloc), and async Dart. Conducted individual code reviews and debugging sessions. Adapted explanations based on each student's prior programming background.
+**R:** Average project scores improved by 10% compared to the previous semester. Students consistently demonstrated cleaner architecture and better adherence to OOP principles in their submissions.
+**Use for:** "Communication of technical concepts", "Working with non-technical stakeholders", "Mentoring or teaching experience", "Patience and adaptability"
+
+---
 
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+> Intertech was an internship / part-time role during my degree — the natural end point was completing my BSc and transitioning to the MSc. The experience was valuable and I left on good terms.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> Acknowledge the gap honestly, then bridge to adjacent experience. For example: "I haven't worked with [X] directly, but I've done similar work with [Y] — the core concepts transfer, and I typically pick up new tools quickly. I'd expect to be productive within [timeframe]."
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> In a role where I've built genuine depth in [area most relevant to the job], while still working across the stack. I'm interested in growing into technical ownership — architecting systems and making design decisions, not just implementing them.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> I'm a generalist by nature, which means I can contribute across many areas but haven't yet built a single deep specialism. I'm actively building depth in [most relevant area to role] — and I've found that my breadth makes me a faster learner when I go deep, because I already understand the systems around the thing I'm specialising in.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
