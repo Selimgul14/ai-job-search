@@ -14,8 +14,8 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** Python, TypeScript, Flutter/Dart, C#/.NET, Microsoft Azure (AZ-900), Linux systems administration, Ansible, Terraform, Docker, Kubernetes, CI/CD (GitHub Actions), Next.js/React, REST APIs, Firebase, Supabase, OpenCV, Agile/Scrum
-**Moderate match areas:** Django, NumPy/Pandas, SQL/PostgreSQL, Mixed-Integer Programming, Swift (minimal)
+**Strong match areas:** Python, TypeScript, Flutter/Dart, C#/.NET, Microsoft Azure (AZ-900), Linux systems administration, Ansible, Terraform, Bicep, Docker, Kubernetes, CI/CD (GitHub Actions), FastAPI, Next.js/React, REST APIs, Firebase, Supabase, OpenCV, Agile/Scrum
+**Moderate match areas:** Django, NumPy/Pandas, SQL/PostgreSQL, TimescaleDB, Grafana, systemd, Mixed-Integer Programming, Swift (minimal)
 **Weak match areas:** Pure ML/deep learning research, data engineering at petabyte scale, enterprise Java systems, Rust, native iOS deep specialisation
 
 ### 2. Experience Match (0-100)
@@ -47,14 +47,13 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- **UK roles:** PASS — holds UK Graduate Visa, eligible to work without sponsorship for 2 years from graduation (Sep 2026). For cover letters: "I hold a UK Graduate Visa and am available to start without sponsorship."
-- **Netherlands roles:** PASS — holds Orientation Year Visa, eligible to work without sponsorship for 1 year. For cover letters: "I hold a Netherlands Orientation Year Visa and am available immediately without sponsorship."
-- **Germany roles:** PASS — open to relocation; standard EU/Schengen work permit process applies as Turkish citizen. Verify requirements per employer.
-- **Turkey roles:** PASS — citizen, no visa needed.
-- **Denmark (English-language) roles:** PASS — open to relocation.
-- **Remote with occasional office:** PASS
+- **Any Turkish city:** PASS — job search covers all of Turkey, not just Istanbul (auto-included, no need to flag). Based in Istanbul, Turkish citizen, no visa/work-permit constraints.
+- **Roles outside Turkey:** FAIL — job search is Turkey-only as of Aug 2026 (relocated permanently). Do not evaluate or draft applications for non-Turkey roles unless Selim explicitly says his search scope has changed again.
+- **Remote (Turkey-based) with occasional office:** PASS
 - **Frequent international travel:** FLAG (discuss if relevant to role)
-- **Visa note:** Do NOT state visa status on CV. Include naturally in cover letters for UK and NL applications only (per templates above).
+- **Visa note:** Not applicable — no visa/sponsorship framing needed in CVs or cover letters for Turkish employers.
+
+**Historical note:** Selim ran a UK/EU-focused search Jul–Aug 2026 while finishing his MSc in Liverpool (see `job_search_tracker.csv`), which included a UK SC clearance deal-breaker (5-year UK residency requirement he didn't meet, confirmed via Mobilise Cloud rejection 2026-07-09) and UK Graduate Visa / NL Orientation Year visa framing. That search is now inactive — do not apply those constraints to current evaluations.
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -77,8 +76,8 @@ Does this role advance career goals and contain tasks that energize?
 - Non-task factors: clear goals, autonomy on implementation, environment that rewards initiative
 
 **Life situation alignment:** Consider personal constraints:
-- **Security:** Graduating September 2026; seeking first full-time role, open to start immediately after graduation
-- **Flexibility:** Open to relocation anywhere (UK, NL, DE, TR, DK); no constraints on hybrid/remote split; no salary floor stated
+- **Security:** MSc dissertation submitted 11 Sep 2026; seeking first full-time role, available to start immediately after submission
+- **Flexibility:** Based in Istanbul, job search is Turkey-only; no constraints on hybrid/remote split; no salary floor stated
 - **Professional development:** Strong interest in deepening expertise in whichever technical area the first role provides
 
 ### 6. Salary Benchmark (Optional)

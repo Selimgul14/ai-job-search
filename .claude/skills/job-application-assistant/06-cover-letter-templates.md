@@ -99,12 +99,16 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 \lettercontent{I look forward to hearing from you.}
 
 \begin{flushright}
-\closing{Kind regards,\\}
+\closing{Kind regards,}
 
 \signature{[YOUR_NAME]}
 \end{flushright}
 \end{document}
 ```
+
+### Known template pitfall: don't add a trailing `\\` inside `\closing{}`
+
+`cover.cls`'s `\closing{#1}` macro already wraps its argument as `{#1 \\}` internally. Writing `\closing{Kind regards,\\}` double-escapes (the macro's own `\\` plus yours), which throws a non-fatal "There's no line here to end" LaTeX error in the log — the PDF still compiles and the visual result looks fine, so this is easy to miss in the mandatory PDF-inspection step. Always call it as `\closing{Kind regards,}` with no trailing `\\`.
 
 ## Key Commands Reference
 
@@ -147,7 +151,8 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 ### Non-English Cover Letters
 - Same template structure, just write content in the posting's language
 - Adjust date format to local convention
-- Adjust closing to local convention (e.g. "Med venlig hilsen," for Danish)
+- Adjust closing to local convention (e.g. "Med venlig hilsen," for Danish; "Saygılarımla," for Turkish)
+- Turkish postings: since Selim is a Turkish citizen applying domestically, do not add any visa/work-authorization framing — it's unnecessary and reads oddly to a local employer
 
 ## Checklist Before Finalizing
 - [ ] No em-dashes (use commas or periods instead)

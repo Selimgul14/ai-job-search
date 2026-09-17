@@ -1,0 +1,19 @@
+% One-page CV — Virtuagym, Software Engineer (remote from Turkey)
+% xelatex -jobname=Selim_Gul_Software_Engineer_CV_Virtuagym onepage_virtuagym.tex
+\input{onepage_preamble}
+\newcommand{\cvprojects}{onepage_projects_backend}
+\begin{document}
+
+\cvheader{SOFTWARE ENGINEER \textbar\ PYTHON · TYPESCRIPT · APIs · DISTRIBUTED SYSTEMS}
+
+\cvsection{PROFILE}
+Software engineer and Sabancı University Computer Science graduate completing an MSc in Advanced Computer Science at the University of Liverpool. Builds testable, maintainable services in Python and TypeScript: a FastAPI backend over a relational PostgreSQL/TimescaleDB schema, containerised with Docker, that ran unattended for months across a distributed probe fleet and ingested \textasciitilde 800K measurements with store-and-forward buffering and retry/recovery logic. Monitors what he ships, using Grafana dashboards for health scoring and incident triage, and communicates fluently in English (TOEFL iBT 112/120).
+
+\cvsection{TECHNICAL SKILLS}
+\skill{Languages}{Python, TypeScript/JavaScript, C\#, SQL, Java}
+\skill{Backend \& APIs}{FastAPI, REST API design, Next.js, distributed data collection, event buffering}
+\skill{Databases}{PostgreSQL, TimescaleDB, SQLite, Supabase, relational schema design}
+\skill{Infra \& Practices}{Docker, Kubernetes (fundamentals), Linux, Azure (AZ-900), Git, Agile/Scrum, CI/CD}
+
+\input{onepage_body}
+\end{document}

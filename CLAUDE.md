@@ -12,14 +12,14 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Identity
 - **Name:** Selim Gul
-- **Location:** Liverpool, UK | Open to relocation: UK (countrywide), Netherlands, Germany, Turkey, Denmark (English-language)
-- **Phone:** +44 7760637907
+- **Location:** Istanbul, Türkiye. Back in Turkey permanently as of Aug 2026 — job search is Turkey-only, but covers the whole country (not just Istanbul); all Turkish cities are auto-included
+- **Phone:** +90 553 736 0873
 - **Email:** gul.selim@outlook.com
 - **LinkedIn:** https://linkedin.com/in/selim-gul
 - **GitHub:** https://github.com/Selimgul14
 - **Languages:** Turkish (native), English (fluent — TOEFL iBT 112/120)
-- **Status:** MSc student, graduating September 2026
-- **Visa:** UK Graduate Visa (eligible to work without sponsorship, 2 years from Sep 2026 graduation); Netherlands Orientation Year Visa (1 year). **Do NOT state on CV** — include naturally in cover letters for UK and NL applications only.
+- **Status:** MSc student — dissertation submitted 11 Sep 2026; degree complete pending award. Available to start immediately. **In CVs and cover letters, phrase this as "completing an MSc in Advanced Computer Science at the University of Liverpool"** — do not write "dissertation submitted" (candidate preference)
+- **Visa:** Not applicable — Turkish citizen applying to domestic Turkish employers, no work authorization constraints.
 
 ### Education
 - **M.Sc. Advanced Computer Science** (Sep 2025 – Sep 2026) — University of Liverpool, Liverpool, UK
@@ -35,7 +35,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Contributing to Aurora, open-source cross-platform ATC client in C# and Blazor
   - Real-time data processing and UI performance optimisation for safety-critical software
 - **Systems Engineer (Part-Time)** (Dec 2023 – Jun 2024) — **Intertech**, Istanbul, Turkey
-  - Architected LLM-based automation tools to generate Ansible playbooks — 40% reduction in manual scripting time
+  - Architected LLM-based automation tools to generate Ansible playbooks (do NOT quote a percentage reduction — metric removed at candidate request, 2026-09-12)
   - Engineered Python/PowerShell pipeline to synchronise VM inventory across Hyper-V and VMware
   - Managed Linux/Windows server environments for high-availability banking infrastructure
 - **Software Engineer Intern** (Jul 2023 – Sep 2023) — **Intertech**, Istanbul, Turkey
@@ -46,14 +46,15 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Weekly code reviews and debugging; average project scores improved by 10%
 
 ### Independent Projects
+- **Remote WiFi Performance & Diagnostic Platform** (Python, FastAPI, Azure, PostgreSQL/TimescaleDB, Docker, Bicep, Raspberry Pi — 2025/2026): Built and deployed an end-to-end network-diagnostics platform combining a Raspberry Pi/Linux probe, a FastAPI backend, and an Azure-hosted time-series database (Bicep-provisioned App Service, Azure Database for PostgreSQL/TimescaleDB, Blob Storage). Collected ~800K real-world measurements during continuous unattended deployment (systemd, SQLite store-and-forward buffering, retry/recovery logic). Designed web, video, email, and download workloads across local, controlled-cloud, and real-world endpoints to attribute degradation to the WiFi link, upstream network, or a third-party service; correctly attributed a real 40-minute upstream outage while local WiFi stayed healthy. Grafana dashboards for health scoring and historical incident queries.
 - **EV Trip Tracker** (Next.js 15, TypeScript, Supabase, Tailwind, Leaflet, Vercel — 2025/2026): Full-stack web app for logging EV charging across a ~5,000 km multi-country road trip. Physics-accurate efficiency model (battery SoC drop × usable capacity — avoids inflating numbers from free top-ups). Multi-currency cost tracking (stored in original denomination, never converted at write time). Map, CSV/Excel export. Deployed on Vercel. Built with Claude Code.
-- **Election Analysis & Nowcasting Engine** (Python, MIP — 2023–24): Sabancı University senior capstone project (ENS491). Mixed-Integer Programming model predicting election outcomes from scraped precinct-level data.
+- **Election Analysis & Nowcasting Engine** (Python, MIP — 2023–24): Sabancı University senior capstone project (ENS491). Mixed-Integer Programming model to select representative electoral neighbourhoods and polling-unit weights (validated across five cities, <10% weighted absolute error), used as the basis for predicting election outcomes from scraped precinct-level data. Automated scraping and data cleaning pipelines for large-scale political datasets.
 - **CT-Angiography Vessel Segmentation** (Python, OpenCV, Azure — 2024): Medical imaging pipeline with CLAHE + adaptive thresholding; GPT-4 API interface for natural language radiology queries.
 - **E-Commerce Ecosystem CS308** (Flutter, Firebase, Agile — 2022): Lead developer, 5-person team. Real-time inventory, secure payments, Firebase. Managed Agile sprints and Git workflow.
 
 ### Technical Skills
 - **Primary:** Python, TypeScript, Flutter/Dart, C#/.NET, Microsoft Azure (AZ-900), Linux, Ansible
-- **Secondary:** C++, SQL, Java, Docker, Kubernetes, Terraform, Next.js/React, Firebase, Supabase, OpenCV
+- **Secondary:** C++, SQL, Java, Docker, Kubernetes, Terraform, Bicep, TimescaleDB, Grafana, systemd, Next.js/React, Firebase, Supabase, OpenCV
 - **Tools:** Git, GitHub Actions, VMware, Hyper-V, Vercel, Jira, Confluence, Agile/Scrum
 - **ML & Data:** OpenCV, NumPy, Pandas, CrewAI, Jupyter, Mixed-Integer Programming
 
@@ -87,10 +88,14 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Deal-breakers
 - Pure frontend roles with no systems/backend component
-- Roles requiring visa sponsorship (Selim does NOT need sponsorship — Graduate Visa UK, Orientation Year NL)
+- Roles outside Turkey (job search is Turkey-only as of Aug 2026 — see Location above)
+
+### Prior UK Job Search (historical, inactive)
+Selim ran a UK/EU-focused search from ~Jul 2026 while completing his MSc in Liverpool (see `job_search_tracker.csv` for applications from that period). That search included a UK SC clearance deal-breaker (SC eligibility requires 5 years continuous UK residency, which he didn't have) and UK Graduate Visa / NL Orientation Year visa framing in cover letters. **This is no longer active** — he has relocated permanently to Istanbul and the search is Turkey-only. Kept here for context only; do not apply UK-specific constraints to new evaluations.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
+- `cv/onepage_*.tex` - current one-page CVs (see Workflow step 3); `cv/main_*.tex` are superseded 2-page moderncv versions
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.claude/skills/` - AI skill definitions for the application workflow
 - `.agents/skills/` - Job search CLI tools
@@ -98,7 +103,13 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
-3. If good fit: create targeted CV (`cv/main_<company>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
+3. If good fit: create targeted CV (`cv/onepage_<company>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
+   - **CV format (approved 2026-09-16): one page**, modelled on `documents/cv/1787750462192_Selim_Gul_Cloud_Platform_Engineer_CV_v1.pdf`. Each `cv/onepage_<company>.tex` only sets the title line (`\cvheader{...}`), PROFILE and TECHNICAL SKILLS, then `\input{onepage_body}`. Experience, projects, education and certification live in the shared `cv/onepage_body.tex` (candidate-approved wording — do not re-tailor per job). Layout macros are in `cv/onepage_preamble.tex`.
+   - Compile with xelatex and a recruiter-ready jobname, e.g. `xelatex -jobname=Selim_Gul_DevOps_Engineer_CV_<Company> onepage_<company>.tex`
+   - The older 2-page moderncv `cv/main_*.tex` files are superseded; do not create new ones.
+   - Projects come in two approved variants: `onepage_projects_infra.tex` (default — DevOps/cloud/platform) and `onepage_projects_backend.tex` (backend/software roles; enable with `\newcommand{\cvprojects}{onepage_projects_backend}` before `\begin{document}`).
+   - **Generic CVs** for lower-priority applications (no tailoring): `cv/Selim_Gul_DevOps_Engineer_CV.pdf`, `cv/Selim_Gul_Cloud_Engineer_CV.pdf`, `cv/Selim_Gul_Backend_Software_Engineer_CV.pdf` (sources `cv/onepage_generic_{devops,cloud,backend}.tex`).
+   - The reference PDFs in `documents/cv/` say 1.2M+ measurements — outdated. The correct figure is **~800K**; never send those files.
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 
@@ -120,7 +131,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] Nice-to-have requirements are highlighted where there is a match
 
 ### Consistency
-- [ ] CV follows the standard 2-page moderncv/banking format
+- [ ] CV follows the one-page format (`cv/onepage_<company>.tex` + shared `onepage_preamble.tex` / `onepage_body.tex`)
 - [ ] Cover letter uses cover.cls template and established structure
 - [ ] Tone is consistent across CV and cover letter
 - [ ] No contradictions between CV and cover letter content
@@ -134,8 +145,9 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable - LaTeX page-break decisions are unpredictable. Iterate until these all pass:
-- [ ] CV compiled with **lualatex** (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors). Cover letter compiled with **xelatex** (cover.cls requires fontspec).
-- [ ] **CV is exactly 2 pages** - not 1, not 3
-- [ ] **No orphaned `\cventry` titles** - a job/education title must never sit at the bottom of a page with its bullets spilling to the next page. Use `\needspace{5\baselineskip}` before each `\cventry` to prevent this, and `\enlargethispage{2-3\baselineskip}` to rescue a trailing section that just barely spills
+- [ ] CV and cover letter both compiled with **xelatex** (both use fontspec).
+- [ ] **CV is exactly 1 page**
+- [ ] **No widow lines** - the layout is ragged-right with hyphenation disabled, so a paragraph or bullet must never end with one or two words alone on a line. Fix by trimming wording, not by changing margins or font size in the shared preamble
+- [ ] **If a compiled PDF can't be overwritten** ("Device or resource busy"), the user has it open — ask them to close it rather than writing to a different filename
 - [ ] **Cover letter is exactly 1 page** - signature block must fit with the body, never overflow
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`

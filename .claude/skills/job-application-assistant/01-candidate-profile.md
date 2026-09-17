@@ -2,14 +2,14 @@
 
 ## Identity
 - **Name:** Selim Gul
-- **Location:** Liverpool, UK | Open to Relocation (UK, Netherlands, Germany, Turkey, Denmark)
-- **Phone:** +44-7760637907
+- **Location:** Istanbul, Türkiye — job search is Turkey-only (relocated permanently Aug 2026), covering the whole country, not just Istanbul
+- **Phone:** +90 553 736 0873
 - **Email:** gul.selim@outlook.com
 - **LinkedIn:** https://linkedin.com/in/selim-gul
 - **GitHub:** https://github.com/Selimgul14
 - **Languages:** Turkish (native), English (fluent — TOEFL iBT 112/120)
-- **Status:** MSc student, graduating September 2026
-- **Visa:** UK Graduate Visa (eligible to work without sponsorship, 2 years from graduation); Netherlands Orientation Year Visa (1 year). Do NOT state on CV — include naturally in cover letters for UK and NL applications only.
+- **Status:** MSc student — dissertation submitted 11 Sep 2026; available to start immediately
+- **Visa:** Not applicable — Turkish citizen, domestic Turkish employers only.
 
 ## Education
 
@@ -30,7 +30,7 @@ Remote
 ### Systems Engineer (Part-Time) — Intertech (Dec 2023 – Jun 2024)
 Istanbul, Turkey
 - Engineered automated inventory management pipeline using Python and PowerShell to synchronise VM data across Hyper-V and VMware
-- Architected LLM-based automation tools to dynamically generate Ansible playbooks, reducing manual scripting by 40%
+- Architected LLM-based automation tools to dynamically generate Ansible playbooks (no percentage metric — removed at candidate request)
 - Managed and optimised Linux and Windows server environments for high-availability banking infrastructure
 
 ### Software Engineer Intern — Intertech (Jul 2023 – Sep 2023)
@@ -45,9 +45,11 @@ Istanbul, Turkey
 
 ## Independent Projects
 
+- **Remote WiFi Performance & Diagnostic Platform** (Python, FastAPI, Azure, PostgreSQL/TimescaleDB, Docker, Bicep, Raspberry Pi — 2025/2026): Built and deployed an end-to-end network-diagnostics platform combining a Raspberry Pi/Linux probe, a FastAPI backend, and an Azure-hosted time-series database (Bicep-provisioned App Service, Azure Database for PostgreSQL/TimescaleDB, Blob Storage). Collected ~800K real-world measurements during continuous unattended deployment (systemd, SQLite store-and-forward buffering, retry/recovery logic). Designed web, video, email, and download workloads across local, controlled-cloud, and real-world endpoints to attribute degradation to the WiFi link, upstream network, or a third-party service; correctly attributed a real 40-minute upstream outage while local WiFi stayed healthy. Grafana dashboards for health scoring and historical incident queries.
+
 - **EV Trip Tracker** (Next.js 15, TypeScript, Supabase, Tailwind, Leaflet, Vercel — 2025/2026): Full-stack web app for logging EV charging sessions across a ~5,000 km multi-country road trip. Multi-currency cost tracking (5 currencies, stored in original denomination — never converted at write time), Leaflet map with clickable charge stop markers, physics-accurate efficiency model (battery SoC-based consumption, not kWh-added — avoids inflating efficiency on free top-ups), petrol savings and CO₂ calculator, CSV/Excel export. Deployed on Vercel with Supabase (PostgreSQL) backend. Built with Claude Code.
 
-- **Election Analysis & Nowcasting Engine** (Python, MIP — 2023-24): Sabancı University senior capstone project (ENS491). Mixed-Integer Programming model to predict election outcomes from scraped precinct-level data. Automated scraping and data cleaning pipelines for large-scale political datasets.
+- **Election Analysis & Nowcasting Engine** (Python, MIP — 2023-24): Sabancı University senior capstone project (ENS491). Mixed-Integer Programming model to select representative electoral neighbourhoods and polling-unit weights (validated across five cities, <10% weighted absolute error), used as the basis for predicting election outcomes from scraped precinct-level data. Automated scraping and data cleaning pipelines for large-scale political datasets.
 
 - **CT-Angiography Vessel Segmentation Pipeline** (Python, OpenCV, Azure — 2024): Medical imaging pipeline using CLAHE and adaptive thresholding for CT-angiography analysis. Integrated GPT-4 API interface for natural language queries on radiological data.
 
@@ -69,8 +71,9 @@ Istanbul, Turkey
 - Next.js 15 (App Router), React, Django, REST APIs, Firebase, Supabase, SQLite, PostgreSQL
 
 ### Cloud & DevOps
-- Microsoft Azure (AZ-900 certified), Kubernetes, Docker, Terraform (IaC), Ansible
-- CI/CD (GitHub Actions), Linux system administration, VMware, Hyper-V, Vercel
+- Microsoft Azure (AZ-900 certified), Kubernetes, Docker, Terraform (IaC), Bicep, Ansible
+- CI/CD (GitHub Actions), Linux system administration, systemd, VMware, Hyper-V, Vercel
+- TimescaleDB, Grafana
 
 ### ML & Data
 - OpenCV, NumPy, Pandas, CrewAI, Jupyter Notebook, Mixed-Integer Programming

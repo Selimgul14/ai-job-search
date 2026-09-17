@@ -1,0 +1,13 @@
+% One-page CV — projects, infrastructure flavour (DevOps / Cloud / Platform CVs)
+% Approved by Selim 2026-09-16.
+\project{Remote WiFi Performance \& Diagnostic Platform}{MSc dissertation \textbar\ Azure · Linux · Python · Docker · Bicep · FastAPI · TimescaleDB · Grafana}{github.com/Selimgul14/network-quality-analysis}{https://github.com/Selimgul14/network-quality-analysis}
+\begin{itemize}
+  \item Built and deployed an end-to-end platform combining an unattended Raspberry Pi/Linux probe, an Azure-hosted FastAPI backend and a managed time-series database; collected \textbf{\textasciitilde 800K measurements} during continuous real-world deployment.
+  \item Provisioned the cloud stack as code with Bicep and containerised the services with Docker, covering Azure App Service, Azure Database for PostgreSQL/TimescaleDB and Blob Storage.
+  \item Implemented resilient unattended operation with systemd, SQLite store-and-forward buffering and retry/recovery logic; the platform correctly attributed a real 40-minute upstream outage while the local WiFi link remained healthy.
+\end{itemize}
+\vspace{2pt}
+\project{EV Trip Tracker}{Vercel · Supabase/PostgreSQL · Next.js · TypeScript}{}{}
+\begin{itemize}
+  \item Built and deployed a mobile-first EV trip application backed by Supabase/PostgreSQL and a REST API, with route mapping, multi-currency analysis and CSV/Excel export.
+\end{itemize}

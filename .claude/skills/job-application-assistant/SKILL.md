@@ -66,3 +66,34 @@ The user may also ask for individual steps without the full workflow:
 - "Write a cover letter for [role] at [company]" - Step 3 only
 - "Help me prepare for an interview at [company]" - Step 4 only
 - "What jobs should I look for?" - Career strategy discussion using profile + evaluation framework
+
+---
+
+## Bulk Application Tiers
+
+After a `/scrape` run, the user triages the result list into up to four buckets. This section defines how to execute each tier. Process **generic first, then tailored-only, then full** (cheapest/fastest to most expensive) so the user sees quick wins land before the slow ones.
+
+### Tier: Skip
+No action. Optionally note the reason in `job_search_tracker.csv` (status `skipped`) if the user gave one, otherwise don't bother logging skips.
+
+### Tier: Generic CV (fastest — no tailoring, no cover letter)
+- Do not evaluate fit in depth and do not tailor anything.
+- Pick one of the three generic one-page CVs by the posting's title alone (created 2026-09-16):
+  - **DevOps / SRE / platform / systems / infrastructure** → `cv/Selim_Gul_DevOps_Engineer_CV.pdf` (source `cv/onepage_generic_devops.tex`)
+  - **Cloud / cloud platform / Azure / cloud operations** → `cv/Selim_Gul_Cloud_Engineer_CV.pdf` (source `cv/onepage_generic_cloud.tex`)
+  - **Backend / software / full-stack / Python / .NET** → `cv/Selim_Gul_Backend_Software_Engineer_CV.pdf` (source `cv/onepage_generic_backend.tex`)
+  - If unsure, use the DevOps one. Do NOT use the reference PDFs in `documents/cv/` — they contain an outdated measurement count (1.2M+; correct figure is ~800K).
+  - If a PDF is missing or stale, recompile with `xelatex -jobname=<pdf name without .pdf> <source>.tex` from `cv/`.
+- No cover letter.
+- Tell the user which file to submit for each job in this bucket. Add a row per job to `job_search_tracker.csv` with `cv_file` set to the base CV used, `cover_letter_file` blank, and a note that it was sent unmodified.
+
+### Tier: Tailored CV only (no cover letter)
+A lighter, faster version of `/apply` — skip the reviewer-agent research loop and the cover letter entirely:
+1. Read `01-candidate-profile.md`, `05-cv-templates.md`, and the closest base CV as a starting point.
+2. Tailor the profile statement, skills order, and experience bullet emphasis to the posting (same rules as `/apply` Step 2), writing directly to `cv/main_<company>.tex`.
+3. Compile with lualatex and visually inspect the PDF (same mandatory checks as `/apply` Step 5: exactly 2 pages, no orphaned `\cventry` titles).
+4. Skip the drafter-reviewer research loop (`/apply` Steps 1, 3, 4) — no company research, no reviewer agent. This tier trades that depth for speed.
+5. Log the row in `job_search_tracker.csv`.
+
+### Tier: Full application (tailored CV + cover letter)
+Run the complete `/apply` workflow (`.claude/commands/apply.md`) unchanged — full fit evaluation, drafter-reviewer loop with company research, tailored CV and cover letter, compile-and-inspect for both. Reserve this tier for postings the user has flagged as genuinely worth the effort; process one at a time, not in a batch.

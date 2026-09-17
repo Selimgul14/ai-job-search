@@ -31,8 +31,8 @@
 
 % Personal data
 \name{Selim}{Gul}
-\address{Liverpool, United Kingdom}{}{}
-\phone[mobile]{+44 7760637907}
+\address{Istanbul, Türkiye}{}{}
+\phone[mobile]{+90 553 736 0873}
 \email{gul.selim@outlook.com}
 \extrainfo{\href{https://linkedin.com/in/selim-gul}{LinkedIn}, \href{https://github.com/Selimgul14}{GitHub}}
 
@@ -45,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{Software engineer and MSc Computer Science candidate (University of Liverpool, graduating Sep 2026) with proven experience across cloud/DevOps automation, full-stack web, and Flutter mobile development. Architected LLM-powered infrastructure tooling at a banking systems integrator (40\% reduction in manual scripting), built a cross-platform mobile security app achieving 94\% document verification precision, and deployed a Next.js/TypeScript/Supabase application used on a real $\sim$5{,}000~km multi-country road trip. Holds Azure Fundamentals (AZ-900) certification; hands-on with Kubernetes, Docker, Terraform, Ansible, and GitHub Actions. Adaptable generalist who focuses depth where the role demands it.}
+\small{Software engineer and MSc Advanced Computer Science candidate (University of Liverpool, dissertation submitted Sep 2026) with proven experience across cloud/DevOps automation, full-stack web, and Flutter mobile development. Built and deployed an Azure-hosted network-diagnostics platform collecting 1.2M+ real-world measurements; architected LLM-powered infrastructure tooling at a banking systems integrator; and built a cross-platform mobile security app achieving 94\% document verification precision. Holds Azure Fundamentals (AZ-900) certification; hands-on with Kubernetes, Docker, Terraform, Bicep, Ansible, and GitHub Actions. Adaptable generalist who focuses depth where the role demands it.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -57,9 +57,9 @@
 
 \item \textbf{Languages}: Python, TypeScript, C\#, C++, Dart, SQL, Java, Bash, PowerShell
 
-\item \textbf{Cloud \& DevOps}: Microsoft Azure (AZ-900 certified), Kubernetes, Docker, Terraform (IaC), Ansible, CI/CD (GitHub Actions), Linux system administration, VMware, Hyper-V, Vercel
+\item \textbf{Cloud \& DevOps}: Microsoft Azure (AZ-900 certified), Kubernetes, Docker, Terraform (IaC), Bicep, Ansible, CI/CD (GitHub Actions), Linux system administration, systemd, VMware, Hyper-V, Vercel
 
-\item \textbf{Mobile \& Web}: Flutter, Dart (Provider/Bloc), Android SDK, iOS deployment, Next.js~15 (App Router), React, Django, REST APIs, Firebase, Supabase, PostgreSQL, SQLite
+\item \textbf{Mobile \& Web}: Flutter, Dart (Provider/Bloc), Android SDK, iOS deployment, Next.js~15 (App Router), React, Django, FastAPI, REST APIs, Firebase, Supabase, PostgreSQL, TimescaleDB, SQLite, Grafana
 
 \item \textbf{ML \& Data}: OpenCV, NumPy, Pandas, CrewAI, Jupyter Notebook, Mixed-Integer Programming
 
@@ -87,7 +87,7 @@
 \needspace{5\baselineskip}
 \item{\cventry{Dec 2023 -- Jun 2024}{Systems Engineer (Part-Time)}{Intertech}{Istanbul, Turkey}{}{\vspace{1pt}
 \begin{itemize}
-    \item Architected LLM-based automation tools to dynamically generate Ansible playbooks, reducing manual scripting time by 40\%
+    \item Architected LLM-based automation tools to dynamically generate Ansible playbooks
     \item Engineered automated inventory management pipeline using Python and PowerShell to synchronise VM data across Hyper-V and VMware
     \item Managed and optimised Linux and Windows server environments for high-availability banking infrastructure
 \end{itemize}}}
@@ -120,9 +120,11 @@
 \vspace{1pt}
 \begin{itemize}
 
+\item \textbf{Remote WiFi Performance \& Diagnostic Platform} (MSc dissertation; Python, FastAPI, Azure, PostgreSQL/TimescaleDB, Docker, Bicep, Raspberry Pi --- 2025/2026): End-to-end network-diagnostics platform combining a Raspberry Pi/Linux probe, FastAPI backend, and Azure-hosted time-series database (Bicep-provisioned App Service, Azure Database for PostgreSQL/TimescaleDB, Blob Storage). Collected 1.2M+ real-world measurements via continuous unattended deployment (systemd, SQLite store-and-forward buffering); correctly attributed a real 40-minute upstream outage while local WiFi stayed healthy. Grafana dashboards for health scoring and historical incident queries. \href{https://github.com/Selimgul14/network-quality-analysis}{github.com/Selimgul14/network-quality-analysis}
+
 \item \textbf{EV Trip Tracker} (Next.js~15, TypeScript, Supabase, Tailwind, Leaflet, Vercel --- 2025/2026): Full-stack web app for logging EV charging sessions across a $\sim$5{,}000~km multi-country road trip. Physics-accurate efficiency model (battery SoC drop $\times$ usable capacity, avoiding inflation from free top-ups); multi-currency cost tracking stored in original denomination; Leaflet map with clickable charge markers; petrol savings and CO$_{2}$ calculator; CSV/Excel export. Deployed on Vercel with Supabase (PostgreSQL) backend. Built with Claude Code.
 
-\item \textbf{Election Analysis \& Nowcasting Engine} (Python, MIP --- 2023--24): Mixed-Integer Programming model to predict election outcomes from scraped precinct-level data; automated data cleaning pipelines for large-scale political datasets.
+\item \textbf{Election Analysis \& Nowcasting Engine} (Python, MIP --- 2023--24): Mixed-Integer Programming model to select representative electoral neighbourhoods and polling-unit weights (validated across five cities, <10\% weighted absolute error), used as the basis for predicting election outcomes from scraped precinct-level data; automated data cleaning pipelines for large-scale political datasets.
 
 \item \textbf{CT-Angiography Vessel Segmentation} (Python, OpenCV, Azure --- 2024): Medical imaging pipeline using CLAHE and adaptive thresholding; GPT-4 API interface for natural language queries on radiological data.
 

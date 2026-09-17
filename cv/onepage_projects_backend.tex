@@ -1,0 +1,20 @@
+% One-page CV — projects, backend flavour (Backend / Software Engineer CVs)
+% Wording from documents/cv/1787750462192_Selim_Gul_Backend_Software_Engineer_CV_v1.pdf,
+% with the measurement count corrected to ~800K and the dissertation label + repo link added.
+\project{Remote WiFi Performance \& Diagnostic Platform}{MSc dissertation \textbar\ Python · FastAPI · PostgreSQL/TimescaleDB · Azure · Docker · Raspberry Pi}{github.com/Selimgul14/network-quality-analysis}{https://github.com/Selimgul14/network-quality-analysis}
+\begin{itemize}
+  \item Built and deployed an end-to-end network-diagnostics platform combining a Raspberry Pi probe, a FastAPI backend and an Azure-hosted time-series database; collected \textbf{\textasciitilde 800K measurements} during continuous real-world deployment.
+  \item Designed web, video, email and download workloads across local, controlled-cloud and real-world endpoints to attribute degradation to the WiFi link, upstream network or third-party service.
+  \item Implemented SQLite store-and-forward buffering, historical incident queries and health scoring; correctly attributed a real \textbf{40-minute upstream outage} while local WiFi remained healthy.
+\end{itemize}
+\vspace{2pt}
+\project{EV Trip Tracker}{TypeScript · Next.js · Supabase/PostgreSQL · Vercel}{}{}
+\begin{itemize}
+  \item Built and deployed a mobile-first EV charging tracker with a REST API, route mapping, multi-currency cost analysis and CSV/Excel export.
+  \item Implemented trip-efficiency calculations from odometer, battery-state and charging data, including usable-battery-capacity estimation and fallback logic for incomplete measurements.
+\end{itemize}
+\vspace{2pt}
+\project{Representative Polling Units for Local Elections}{Python · Data Pipelines · Mixed-Integer Programming}{}{}
+\begin{itemize}
+  \item Built a Python data pipeline and mixed-integer optimisation model to select representative electoral neighbourhoods and weights; validated across five cities with \textbf{<10\% weighted absolute error} in every reported test case.
+\end{itemize}

@@ -1,110 +1,83 @@
 # Search Queries for Job Scraper
 
 ## Candidate
-**Selim Gul** — MSc Advanced Computer Science, University of Liverpool (graduating Sep 2026)
-Open to: UK, Netherlands, Germany, Turkey, Denmark (English-language)
-Visa: UK Graduate Visa (no sponsorship, 2yr); NL Orientation Year (no sponsorship, 1yr)
+**Selim Gul** — MSc Advanced Computer Science, University of Liverpool (dissertation submitted 11 Sep 2026)
+Based in Istanbul, Türkiye. Job search is **Turkey-only** as of Aug 2026 (relocated permanently). Turkish citizen — no visa/work-permit constraints for domestic employers.
 
 ## Search Sites
 
-**Primary (LinkedIn — use for all markets):**
-- linkedin.com/jobs — filter by location (United Kingdom / Netherlands / Germany / Turkey / Denmark) and date posted (last 30 days)
+**Primary:**
+- linkedin.com/jobs — filter location "İstanbul, Türkiye" / "Türkiye"
+- kariyer.net — largest Turkish job portal, strong coverage of tech roles
+- secretcv.com
+- yenibiris.com
+- indeed.com (Turkey listings)
 
-**UK-specific:**
-- indeed.co.uk
-- reed.co.uk
-- cwjobs.co.uk
-
-**Netherlands:**
-- indeed.nl
-- glassdoor.nl
-- werkzoeken.nl
-
-**Germany:**
-- stepstone.de
-- indeed.de
-- glassdoor.de
-
-**Turkey:**
-- kariyer.net
-- linkedin.com/jobs (filter Turkey)
-
-**Denmark (English-language roles):**
-- jobindex.dk (filter language: English)
-- linkedin.com/jobs (filter Denmark)
+Postings on Turkish portals are frequently in Turkish even for English-language workplaces — search both Turkish and English terms for every category below.
 
 ## Query Categories
 
-### Priority 1: Cloud & DevOps Engineering
-These match Selim's strongest industry experience (Intertech: Ansible, Python, Linux, Azure).
+### Priority 1: Cloud & Platform Engineering
+Matches Selim's strongest recent work — the WiFi diagnostics platform (Azure, Bicep, Docker, TimescaleDB, Grafana) and Intertech infrastructure automation (Ansible, Hyper-V/VMware).
 
 ```
-"graduate cloud engineer" UK
-"cloud engineer" graduate UK
-"graduate devops engineer" UK
-"devops engineer" graduate UK
-"cloud engineer" "azure" UK
-"devops engineer" "ansible" OR "terraform" UK
-"graduate site reliability engineer" UK
-"platform engineer" graduate UK
-site:linkedin.com/jobs "cloud engineer" "azure" United Kingdom
-site:linkedin.com/jobs "devops engineer" graduate Netherlands
-site:stepstone.de "Cloud Engineer" Junior OR Graduate
-site:jobindex.dk "cloud engineer" english
+"bulut mühendisi" İstanbul
+"cloud engineer" İstanbul
+"devops mühendisi" İstanbul
+"devops engineer" İstanbul
+"platform engineer" OR "platform mühendisi" Türkiye
+"azure" "linux" mühendis İstanbul
+"sistem yöneticisi" azure OR ansible İstanbul
+site:linkedin.com/jobs "cloud engineer" OR "devops engineer" Türkiye
+site:kariyer.net "bulut mühendisi" OR "devops mühendisi"
+site:kariyer.net "cloud engineer" OR "devops engineer"
 ```
 
-### Priority 2: Software Engineering (General & Backend)
-Selim's broadest profile — backend, full-stack, systems engineering.
+### Priority 2: Backend / Software Engineering
+Selim's broadest profile — backend, full-stack, systems engineering (Python/FastAPI, C#/.NET).
 
 ```
-"graduate software engineer" UK
-"software engineer" graduate UK
-"junior software engineer" UK
-"backend engineer" graduate UK
-"backend developer" python OR typescript UK
-"full stack engineer" graduate UK
-"software developer" graduate Liverpool OR London OR Manchester OR Edinburgh
-site:linkedin.com/jobs "software engineer" graduate "python" OR "typescript" "United Kingdom"
-site:linkedin.com/jobs "backend engineer" junior Netherlands
-site:stepstone.de "Software Engineer" Junior OR Graduate Python OR TypeScript
-site:kariyer.net "yazılım mühendisi" OR "software engineer"
+"backend developer" İstanbul
+"backend mühendisi" İstanbul
+"yazılım mühendisi" python OR "c#" İstanbul
+"software engineer" python OR ".net" İstanbul
+"full stack developer" İstanbul
+"python developer" İstanbul
+site:linkedin.com/jobs "software engineer" OR "backend developer" Türkiye
+site:kariyer.net "yazılım mühendisi"
+site:kariyer.net "backend developer" OR "backend mühendisi"
 ```
 
-### Priority 3: Mobile Development (Flutter)
-Selim's strongest app-layer experience — Flutter, Dart, Firebase.
+### Priority 3: Automation & Infrastructure (Adjacent)
+Roles that match Selim's skills but use different titles — strong secondary net given his Ansible/PowerShell/VM automation background.
 
 ```
-"flutter developer" UK
-"mobile developer" flutter UK
-"flutter engineer" UK
-"mobile engineer" flutter OR dart UK
-"cross-platform developer" flutter UK
-site:linkedin.com/jobs "flutter developer" "United Kingdom"
-site:linkedin.com/jobs "flutter engineer" Netherlands OR Germany
+"sistem mühendisi" İstanbul
+"otomasyon mühendisi" python OR ansible
+"altyapı mühendisi" İstanbul
+"IT operations engineer" İstanbul
+"infrastructure engineer" Türkiye
+site:linkedin.com/jobs "systems engineer" OR "infrastructure engineer" Türkiye
+site:kariyer.net "sistem mühendisi" OR "otomasyon mühendisi"
+```
+
+### Priority 4: Mobile Development (Flutter) — Broader Net
+Secondary given the current base CVs lean backend/cloud, but still a genuine skill area.
+
+```
+"flutter developer" İstanbul
+"mobile developer" flutter Türkiye
+"flutter mühendisi"
+site:linkedin.com/jobs "flutter developer" Türkiye
 site:kariyer.net "flutter developer"
-```
-
-### Priority 4: Adjacent Roles (Broader Net)
-Roles that match Selim's skills but use different titles.
-
-```
-"graduate systems engineer" UK
-"infrastructure engineer" graduate UK
-"automation engineer" python OR ansible UK
-"solutions engineer" graduate UK
-"technical consultant" graduate UK
-"cloud automation" python UK
-site:linkedin.com/jobs "automation engineer" "python" OR "ansible" "United Kingdom"
-site:linkedin.com/jobs "systems engineer" graduate Netherlands OR Germany
-"typescript developer" OR "next.js developer" UK
 ```
 
 ## Location Filter
 
-All locations accepted — Selim is open to relocation countrywide within:
-- **Ideal:** Liverpool, London, Manchester, Amsterdam, Rotterdam, Berlin, Munich, Istanbul, Ankara, Copenhagen
-- **Acceptable:** Any UK city, any NL city, any DE city, any TR city, any DK English-language posting
-- **Remote:** Also acceptable — no preference stated
+- **Ideal:** Istanbul (any district)
+- **Acceptable:** Any Turkish city (Ankara, Izmir, Bursa, etc.) — auto-included, no need to flag
+- **Acceptable:** Remote roles based in Turkey
+- **Too far:** Any role outside Turkey — out of scope for the current search
 
 ## Date Filter
 
@@ -112,14 +85,17 @@ Only include jobs posted within the last **30 days**, or with an application dea
 
 ## Visa / Sponsorship Filter
 
-- **UK roles:** Flag if posting says "no visa sponsorship" — Selim does NOT need sponsorship (Graduate Visa). Include these roles.
-- **NL roles:** Flag if posting says "no sponsorship" — Selim does NOT need sponsorship for 1 year (Orientation Year Visa). Include these roles.
-- **DE/TR/DK roles:** Standard process; note if employer explicitly says they sponsor international candidates.
+Not applicable — Selim is a Turkish citizen applying to domestic Turkish employers. Do not add visa/sponsorship framing to postings, cover letters, or evaluations for this search.
+
+## Known Limitations
+
+- **kariyer.net, yenibiris.com, and Glassdoor block automated WebFetch** (403 responses as of Aug 2026) — search snippets from these sites can surface leads, but individual listing pages can't be fetched to verify open/closed status. LinkedIn, Indeed Turkey, company career pages, and smaller boards (eleman.net, isbul.net, jobs.smartrecruiters.com, apply.workable.com) fetch fine. When a promising lead only exists on a blocked site, note it as unverified rather than guessing its status.
+- A large share of Turkish LinkedIn/portal postings that show up in search results turn out to be expired ("artık başvuru kabul etmiyor") — always verify via WebFetch before including a job in results.
 
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and generate 2-3 custom queries:
-- "/scrape cloud" → Priority 1 queries + `"cloud native" graduate` + `"azure devops" junior`
-- "/scrape mobile" → Priority 3 queries + `"react native" graduate` (broader net) + `"ios developer" flutter`
-- "/scrape backend" → Priority 2 queries + `"api developer" python` + `"django developer" UK`
-- "/scrape denmark" → Priority 1-4 queries filtered to Denmark + jobindex.dk searches
+- "/scrape cloud" → Priority 1 queries + `"azure devops" İstanbul` + `"bulut altyapı" mühendis`
+- "/scrape backend" → Priority 2 queries + `"api developer" python İstanbul` + `"django developer" İstanbul`
+- "/scrape mobile" → Priority 4 queries + `"react native" developer İstanbul` (broader net)
+- "/scrape broad" → run all four priority categories

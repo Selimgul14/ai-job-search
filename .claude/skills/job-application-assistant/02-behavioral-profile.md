@@ -48,5 +48,5 @@ When a job posting mentions these, flag as **potential friction** (not deal-brea
 ## Using This in Applications
 - **Cover letters:** Frame adaptability as a feature: "I bring a broad foundation and focus whichever part of the stack the role requires most."
 - **CV:** Emphasise end-to-end project delivery; lead with what the specific role values rather than listing every technology equally
-- **Interviews:** Use EV Trip Tracker (personal initiative, full-stack delivery), LLM automation at Intertech (proactive improvement, 40% impact), and E-Commerce platform (team leadership, Agile delivery) as core STAR examples
+- **Interviews:** Use EV Trip Tracker (personal initiative, full-stack delivery), LLM automation at Intertech (proactive improvement, adopted by the ops team), and E-Commerce platform (team leadership, Agile delivery) as core STAR examples
 - **Don't overstate:** Don't claim deep specialisation in any single area without contextualising the breadth; don't claim pure ML/research credentials

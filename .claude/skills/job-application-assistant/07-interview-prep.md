@@ -12,12 +12,21 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 **S:** The operations team at Intertech maintained banking infrastructure across Hyper-V and VMware. Writing Ansible playbooks was time-consuming and repetitive — engineers were spending hours on manual scripting for each configuration change.
 **T:** As part of my part-time systems engineering role, I identified this as an opportunity to improve team efficiency and took initiative to design a solution.
 **A:** Designed and built an LLM-based tool that dynamically generated Ansible playbooks from structured input. Integrated it into the team's existing infrastructure workflow using Python.
-**R:** Reduced manual scripting time by 40%. The tool was adopted by the operations team and continued in use after my tenure ended.
+**R:** Playbook changes became faster and consistent across environments. The tool was adopted by the operations team and continued in use after my tenure ended.
 **Use for:** "Tell me about a time you improved a process", "Give an example of initiative", "How have you applied AI/ML in a practical context?", "Tell me about a technical achievement you're proud of"
 
 ---
 
-### 2. Fake ID Detection System (Technical Problem-Solving & Delivery)
+### 2. Remote WiFi Performance & Diagnostic Platform (End-to-End System Design & Reliability Engineering)
+**S:** No existing tool could reliably tell whether a slow connection was caused by the local WiFi link, the upstream ISP, or a third-party service being down — a genuinely ambiguous, recurring problem.
+**T:** Build a platform that could collect real-world network performance data continuously and unattended, and correctly attribute degradation to its actual source.
+**A:** Designed and deployed an end-to-end system: a Raspberry Pi/Linux probe running web, video, email, and download workloads against local, controlled-cloud, and real-world endpoints; a FastAPI backend; and an Azure-hosted time-series store (PostgreSQL/TimescaleDB, provisioned with Bicep, running in Docker on Azure App Service with Blob Storage for archival). Built resilient unattended operation with systemd, SQLite store-and-forward buffering for connectivity gaps, and retry/recovery logic, plus Grafana dashboards for health scoring and historical incident queries.
+**R:** Collected ~800K measurements over continuous real-world deployment. The platform correctly attributed a real 40-minute upstream outage to the ISP while confirming the local WiFi link stayed healthy — validating the core design goal.
+**Use for:** "Tell me about a system you designed end-to-end", "Cloud/infrastructure experience", "How do you approach reliability or observability?", "Tell me about a technical project involving ambiguous root-cause diagnosis"
+
+---
+
+### 3. Fake ID Detection System (Technical Problem-Solving & Delivery)
 **S:** During my internship at Intertech, I was tasked with building a proof-of-concept mobile security tool. The goal was to detect fraudulent ID documents in real-time using a mobile camera.
 **T:** Design and deliver a working prototype within the internship period that met a meaningful precision threshold.
 **A:** Built a Flutter mobile application integrated with OpenCV for image processing and a CNN classifier for authenticity detection. Optimised the on-device inference pipeline to maintain low latency on mid-range devices.
@@ -26,7 +35,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ---
 
-### 3. EV Trip Tracker — Personal Project (Initiative, Full-Stack Engineering)
+### 4. EV Trip Tracker — Personal Project (Initiative, Full-Stack Engineering)
 **S:** Planning a ~5,000 km Tesla road trip across 7 countries with 5 different currencies and no existing tool that tracked charging efficiency the way I needed.
 **T:** Build a production-quality web app from scratch that I would actually use on the trip.
 **A:** Built a full-stack Next.js 15 / TypeScript / Supabase application with a physics-accurate efficiency model. Key design decision: used battery state-of-charge drop rather than kWh-added to measure efficiency — this avoids inflating numbers when you receive a free top-up. Added multi-currency support (storing original denomination, never converting at write time), a Leaflet map, and CSV/Excel export. Deployed on Vercel.
@@ -35,7 +44,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ---
 
-### 4. E-Commerce Ecosystem — CS308 (Team Leadership & Agile Delivery)
+### 5. E-Commerce Ecosystem — CS308 (Team Leadership & Agile Delivery)
 **S:** A 5-person team project at Sabanci University requiring a full-stack mobile e-commerce application built from scratch in one semester.
 **T:** As lead developer, I was responsible for architecture decisions, sprint management, and ensuring the team delivered a production-quality MVP on time.
 **A:** Designed the application architecture (Flutter + Firebase), set up Git branching conventions, ran weekly Agile sprints using Jira, conducted code reviews, and coordinated between the frontend and backend contributors.
@@ -44,7 +53,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ---
 
-### 5. Learning Assistant — Mobile Computing (Communication & Teaching)
+### 6. Learning Assistant — Mobile Computing (Communication & Teaching)
 **S:** 40+ undergraduate students in the CS310 Mobile Computing course at Sabanci University were learning Flutter development — many struggling with state management and asynchronous programming in Dart.
 **T:** As learning assistant, help students understand complex Flutter concepts and improve their project quality within a single semester.
 **A:** Ran weekly lab sessions focused on widget lifecycle, state management (Provider/Bloc), and async Dart. Conducted individual code reviews and debugging sessions. Adapted explanations based on each student's prior programming background.

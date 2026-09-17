@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* ── Design tokens (warm cream theme from the imported UI) ─────────────── */
+@theme {
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), ui-monospace, monospace;
+
+  --color-sand: #e9e1d4; /* outer page background */
+  --color-cream: #fbf6ee; /* app panel background */
+  --color-ink: #16314a; /* primary text / dark cards */
+  --color-accent: #ff5a3c; /* brand orange */
+  --color-accent-soft: #fff0ec; /* tinted accent surface */
+  --color-muted: #8a93a0; /* secondary text */
+  --color-stone: #9a8e7c; /* labels / captions */
+  --color-line: #ece3d4; /* hairline borders */
+  --color-track: #eee6d8; /* progress-bar track */
+  --color-danger: #d9482c;
+  --color-danger-soft: #fcebe7;
+}
+
+/* Base resets matching the prototype */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+/* Hide scrollbars on scroll regions */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Bottom-sheet slide-up animation (mobile) */
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.animate-sheet-up {
+  animation: sheet-up 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Centered modal pop (desktop) */
+@keyframes modal-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-modal-pop {
+  animation: modal-pop 0.18s ease-out;
+}
+
+/* Accent focus ring + placeholder styling on form fields */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-accent) !important;
+  outline: none;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #bdb3a2;
+  font-weight: 500;
+}
